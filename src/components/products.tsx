@@ -113,8 +113,8 @@ const Products = () => {
                 {/* <Typography>This is the bottom popper content.</Typography> */}
                 <List>
             {options.map((option) => (
-              <Box key={option}>
-                <ListItem button onClick={() => handleSelect(option)}>
+              <Box key={option} >
+                <ListItem onClick={() => handleSelect(option)}>
                   {selectedOption === option && (
                     <DoneIcon sx={{ mr: 1, color: 'black', fontWeight: 'bold' }} />
                   )}
